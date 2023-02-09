@@ -29,7 +29,7 @@ app.use('/api/item', require('./routes/itemRoute'));
 app.use('/api/bills', require('./routes/billsRoute'));
 
 // static files
-app.use(express.static(path.join(__dirname,'../client/ui/build')))
+app.use(express.static(path.join(__dirname,'/client/ui/build')))
 app.get('*', (req, res) => {
   res.sendFile (path.join(__dirname,'../client/ui/dist/index.html'))
 });
