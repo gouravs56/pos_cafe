@@ -1,0 +1,111 @@
+.body {
+  background-color: aqua;
+  max-zoom: 100%;
+}
+
+/* filter categories */
+.category {
+  border: 1px solid aqua;
+  margin: 3% 5% 3% 3%;
+  padding: 0.1rem !important;
+  cursor: pointer;
+  border-radius: 1rem;
+  box-shadow: 5px 5px 10px rgb(6, 88, 93);
+  background-color: rgb(26, 202, 202);
+  color: rgb(252, 250, 250);
+  transition: transform 0.2s;
+  border: 2px solid #3eefe0;
+  overflow-wrap: break-word;
+  width: 14rem;
+  margin-right: 4;
+}
+.category:hover {
+  transform: scale(0.95);
+  background-color: rgb(26, 202, 202);
+}
+
+.category img {
+  margin-right: 10%;
+  /* padding-top: 10% ; */
+}
+.category-active {
+  background-color: rgb(39, 234, 234);
+  color: rgba(0, 0, 0, 0.78);
+}
+.ant-row {
+  margin-left: 8px !important; margin-right: 1px !important; row-gap: 16px !important;
+}
+
+
+
+.total {
+  position: fixed;
+  bottom: 8rem;
+  right: 7rem;
+  font-size: 4px;
+
+}
+.btn:hover {
+  background-color: #06fbdfb6;
+  color: rgb(3, 63, 63);
+  font-weight: bolder;
+  border: 2px solid teal;
+}
+
+#crat-form{
+  width: 65mm;
+}
+/* invoice modal */
+
+#invoice {
+  padding: 6mm;
+  margin: 0 auto;
+  width: 69mm;
+  background: #fefefe;
+  box-shadow: 0 0 1in -0.25in rgba(1, 1, 1, 0.55);
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 1.2em;
+}
+
+#top,
+#mid {
+  border-bottom: 1px solid rgba(1, 12, 17, 0.529);
+}
+
+#top {
+  min-height: 50px;
+}
+
+.invoiceLogo {
+  height: 60px;
+  width: 60px;
+  border-radius: 5%;
+  background: url(https://cdn-icons-png.flaticon.com/512/900/900864.png)no-repeat;
+  background-size: 50px;
+  margin-bottom: 10px;
+}
+.item {
+  padding-right: 13px;
+  padding-left: 13px;
+}
+.Qty {
+  margin-right: 10px;
+}
+.tableTitle {
+  background: #e6f3f9d0;
+}
+/* mobile design */
+@media (max-width:430) {
+  #inv{
+    zoom: 8%;
+    width: 30px;
+    height: 99;
+  }
+  #invoice{
+    zoom: 8%;
+    width: auto;
+  }
+}

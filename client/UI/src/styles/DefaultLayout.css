@@ -1,0 +1,144 @@
+#components-layout-demo-custom-trigger .trigger {
+  padding: 0 24px;
+  font-size: 18px;
+  line-height: 64px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+#components-layout-demo-custom-trigger .trigger:hover {
+  color: #1890ff;
+}
+
+#components-layout-demo-custom-trigger .logo {
+  height: 32px;
+  margin: 16px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* modified styles */
+
+/* side nav bar */
+.ant-layout-sider-children {
+  background: radial-gradient(
+    circle,
+    rgb(15, 155, 157) 13%,
+    rgb(6, 107, 90) 82%,
+    rgb(7, 108, 101) 100%
+  );
+  margin-top: -0.4rem !important;
+  border-radius: 0.5rem;
+}
+
+.logo {
+  padding-top: 1rem;
+}
+/* selected menu  */
+.ant-menu-item.ant-menu-item-selected {
+  background-color: #20cece;
+}
+
+/* icon and text menus */
+.text {
+  text-decoration: none;
+  color: #fff;
+}
+.text:hover {
+  text-decoration: none;
+  color: #050505;
+}
+
+/* full body (content-bg) */
+.ant-layout.ant-layout-has-sider {
+  padding: 14px;
+  margin-right: 0%;
+  /* height: fit-content; */
+}
+/* card items */
+.ant-card.ant-card-bordered:hover {
+  transform: scale(1.03);
+}
+
+.ant-card.ant-card-bordered {
+  transition: transform 0.2s;
+  box-shadow: 10px 10px 10px rgb(6, 88, 93);
+  row-gap: 44rem !important;
+}
+/* left navbar & body height */
+.ant-layout.ant-layout-has-sider {
+  min-height: 100vh;
+  /* min-width:100vw; */
+  /* overflow:hidden; */
+}
+.ant-layout-sider {
+  border-radius: 10px;
+  padding-top: 10px;
+}
+/* header */
+.ant-layout-header {
+  margin: 0.3rem 0.8rem 0rem 0.9rem;
+  border-radius: 0.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4px;
+  font-size: 18px;
+  line-height: 64px;
+}
+
+#cart-icon {
+  margin-right: 4rem;
+}
+
+.ant-layout-content {
+  border-radius: 0.4rem;
+}
+
+/*icons */
+.anticon svg {
+  height: 20px;
+  width: 20px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  padding-left: 0px;
+}
+
+/*responsiveness for lAPTOP SCREEN */
+@media (min-width: 1440px) {
+  #cart-length {
+    margin-left: 64rem;
+    margin-top: 1rem;
+  }
+}
+
+/* mobile responsiveness */
+@media (max-width: 430px) {
+  .main {
+    zoom: 40%;
+    width: 100%;
+    overflow: hidden !important;
+    min-width: 100vh !important;
+    height: 300vh;
+  }
+
+  .text,
+  .logo {
+    zoom: 130%;
+    margin-bottom: 1.5rem !important;
+  }
+  .cart-item {
+    position: sticky;
+    top: 11.9rem;
+    left: 400vw;
+    margin-right: 3.5rem;
+    margin-top: 1em;
+    zoom: 120%;
+  }
+
+  #cart-icon {
+    zoom: 120%;
+    margin-right: 1.5rem;
+  }
+}
