@@ -18,7 +18,7 @@
     "start": "node index.js",
     "server": "nodemon index.js",
     "seed": "node seeder.js",
-    "client":"npm run dev --prefix client",
+    "client":"cd client && cd UI && npm run dev",
     "develop":"concurrently \"npm start\" \"npm run client\" "
   },
   "keywords": [],
