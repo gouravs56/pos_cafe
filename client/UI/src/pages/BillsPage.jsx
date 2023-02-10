@@ -126,16 +126,16 @@ const BillsPage = () => {
                       <>
                       <tr className="service">
                         <td className="tableItem">
-                          <p className="item text">{item.name} </p>
+                          <p className="item-text">{item.name} </p>
                         </td>
                         <td className="tableItem">
-                          <p className="item text">{item.quantity} </p>
+                          <p className="item-text">{item.quantity} </p>
                         </td>
                         <td className="tableItem">
-                          <p className="item text">{item.price} </p>
+                          <p className="item-text">{item.price} </p>
                         </td>
                         <td className="tableItem">
-                          <h3 className="item text">{item.quantity * item.price} </h3>
+                          <h3 className="item-text">{item.quantity * item.price} </h3>
                         </td>
                       </tr>
                       </>
