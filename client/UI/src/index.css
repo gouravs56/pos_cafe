@@ -64,7 +64,9 @@
   background: #fefefe;
   box-shadow: 0 0 1in -0.25in rgba(1, 1, 1, 0.55);
 }
-
+.item-text{
+  color:black;
+}
 h3 {
   font-weight: 600;
   font-size: 1.2em;
